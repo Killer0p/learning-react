@@ -37,21 +37,21 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [counter, setCounter] = useState(15)
+  const [counter, setCounter] = useState(5)
 
   const addValue = () => {
-    if (counter < 20) {
+    if (counter < 10) {
       setCounter(counter + 1)
     } else {
-      alert("Counter can't go above 20!")
+      alert("Counter can't go above 10!")
     }
   }
 
   const removeValue = () => {
-    if (counter > 0) {
+    if (counter > -5) {
       setCounter(counter - 1)
     } else {
-      alert("Counter can't go below 0!")
+      alert("Counter can't go below -5!")
     }
   }
 
